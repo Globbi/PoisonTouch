@@ -1,0 +1,18 @@
+{
+    "__comment": "Auf dem Link hier findest du mehr Infos zu Advancements: https://minecraft.fandom.com/wiki/Advancement/JSON_format#List_of_triggers",
+    "criteria": {
+        "skelli_hit": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"poisonous\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mob:poisonous_hit"
+    }
+}
